@@ -14,7 +14,7 @@ int main()
     //Apple Sales program
     //variables are like mailboxes
     string name = "Larsen";
-    int num_apples = 10;
+    int num_apples = 100;
     double cost_each = 0.25;
 
     cout << "Welcome to the " << name << " apple farm!" << endl;
