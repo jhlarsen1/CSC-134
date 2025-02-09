@@ -4,7 +4,7 @@
 //receipt calculator
 
 #include <iostream>
-#include <iomanip> // For formatting output
+#include <iomanip>
 
 using namespace std;
 
@@ -18,7 +18,7 @@ int main()
 
     // Print receipt
     cout << fixed << setprecision(2); 
-    cout << "Receipt\n";
+    cout << "RECEIPT:\n";
     cout << "---------------------\n";
     cout << "Price before tax: $" << mealPrice << endl;
     cout << "Tax (" << taxPercent << "%):      $" << taxAmount << endl;
