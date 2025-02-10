@@ -36,8 +36,9 @@ int main()
     xCharge = xVolume * CHARGE_PER_CUBIC_FOOT;
     xProfit = xCharge - xCost;
     cout << endl;
-    cout << "--------------------" << endl;
-
+    cout << "------------------------------------" << endl;
+    cout << endl;
+    
     cout << "Crate's Volume:  " << xVolume << endl;
     cout << "Crate's Cost:  " << xCost << endl;
     cout << "Customer's Charge:  " <<  xCharge << endl;
