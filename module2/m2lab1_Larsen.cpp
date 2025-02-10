@@ -28,6 +28,20 @@ int main()
     cout <<"Enter crate's width:  ";
     cin >> xWidth;
 
+    cout << "Enter crate's Height:  ";
+    cin >> xHeight;
+
+    xVolume = xLength * xWidth * xHeight;
+    xCost = xVolume * COST_PER_CUBIC_FOOT;
+    xCharge = xVolume * CHARGE_PER_CUBIC_FOOT;
+    xProfit = xCharge - xCost;
+
+    cout << "Crate's Volume:  " << xVolume << endl;
+    cout << "Crate's Cost:  " << xCost << endl;
+    cout << "Customer's Charge:  " <<  xCharge << endl;
+    cout << "Profit:  " << xProfit << endl;
+
+
 
 }
 
