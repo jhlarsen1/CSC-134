@@ -31,5 +31,19 @@ int main() {
     // Print the area
     cout << "The area of the first rectangle is: " << area1 <<  endl;
     cout << "The area of the second rectangle is: " << area2 << endl;
+
+    //Which is larger
+    if (area2 > area1)
+    {
+        cout << "The area of the second rectangle is larger." << endl;
+    }
+    else if (area1 > area2)
+    {
+        cout << "The area of the first rectangle is larger." << endl;
+    }
+    else 
+    {
+        cout << "The rectangles are the same size" << endl;
+    }
     return 0;
 }
