@@ -14,22 +14,58 @@ what dice are you using today?
 #include <ctime>
 using namespace std;
 
-int main()
-{
-    const int SIDES = 12;
+
+
+
+int main() {
+    cout << "Let's roll some dice!" << endl;
     int seed = time(0);
-    //seed the random number generator
+    //cout << "Your seed is: " << seed << endl;
+    //cout << "What's your lucky number? ";
+    //cin >> seed;
+    // Seed the RNG
     srand(seed);
-    //rand() is a large number , so we take the remainder which is %
-    int roll;
-    //roll a few times
-    roll = ((rand() %SIDES)+ 1);
-    cout << roll << endl;
+    const int SNAKE_EYES = 2;
+    const int UNLUCKY_THREE = 3;
+    const int BOX_CARS = 12;
+    //WIN ON 7, 11
+    const int LUCKY_SEVEN = 7;
+    const int LUCKY_ELEVEN = 11;
 
-    roll = ((rand() %SIDES)+ 1);
-    cout << roll << endl;
-    
-    roll = ((rand() %SIDES)+ 1);
-    cout << roll << endl;
+    const int MAX = 6; // numbers from 1-6
+    int roll1, roll2, total;
+    roll1  = (rand() % MAX) + 1; // Divide by MAX, and just keep the remainder
+    cout << "Your roll was: " << roll1 << endl;
 
+    roll2  = (rand() % MAX) + 1; // Divide by MAX, and just keep the remainder
+    cout << "Your roll was: " << roll2 << endl;
+
+    total = roll1 + roll2;
+    cout << "Your total roll is: " << total << endl;
+
+    // Let's play craps!
+    // 7 and 11 - win!
+    // 2 and 12 - lose.
+    // anything else -- comes later.
+    if (total == 7) {
+        cout << "Lucky seven! You win!" << endl;
+    }
+    else if (total == 11) {
+        cout << "Eleven is a winner!" << endl;
+    }
+    else if (total == 2) {
+        cout << "Snake eyes! Too bad, you lose." << endl;
+    }
+    else if (total == 3) {
+        cout << "Sorry, three is unlucky, you lose." << endl;
+    }
+    else if (total == 12) {
+        cout << "Boxcars! Sorry, you lost." << endl;
+    }
+    else {
+        // anything else
+        cout << "Your point is " << total << " but we'll do that part later" << endl;
+    }
+
+    return 0;
 }
