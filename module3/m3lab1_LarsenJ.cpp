@@ -33,19 +33,23 @@ int main()
     cin >> choice1;
 
     // Generate random number based on choice1
-    if (choice1 == "A") {
+    if (choice1 == "A") 
+    {
         randomForChoice1 = dist(rng);
         cout << "Random number for A: " << randomForChoice1 << endl;
     } 
-    else if (choice1 == "B") {
+    else if (choice1 == "B") 
+    {
         randomForChoice1 = dist(rng);
         cout << "Random number for B: " << randomForChoice1 << endl;
     }
-    else if (choice1 == "C") {
+    else if (choice1 == "C") 
+    {
         randomForChoice1 = dist(rng);
         cout << "Random number for C: " << randomForChoice1 << endl;
     }
-    else {
+    else 
+    {
         cout << "Invalid choice!" << endl;
     }
 
@@ -54,11 +58,13 @@ int main()
     cin >> choice2;
 
     // Generate random number based on choice2
-    if (choice2 == "A") {
+    if (choice2 == "A") 
+    {
         randomForChoice2 = dist(rng);
         cout << "Random number for A: " << randomForChoice2 << endl;
     } 
-    else if (choice2 == "B") {
+    else if (choice2 == "B") 
+    {
         randomForChoice2 = dist(rng);
         cout << "Random number for B: " << randomForChoice2 << endl;
     }
