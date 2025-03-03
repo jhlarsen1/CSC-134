@@ -4,6 +4,7 @@
 // 3/3/2025
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <random>
 #include <algorithm> // for transform
@@ -24,12 +25,18 @@ int main()
     //Question 1
     cout << "Question 1" << endl;
     question1();
+    
     //Question 2
     cout << "Question 2" << endl;
+    question2();
+
     //Question 3
     cout << "Question 3" << endl;
+    
     //Question 4
     cout << "Question 4" << endl;
+    
+    
     return 0;
 }
 
@@ -69,6 +76,23 @@ int question1()
 
 int question2()
 {
+    // Define variables
+    double mealPrice, mealTip, newMealPrice;
+    cout << "Please enter the price of your meal" << endl;
+    cin >> mealPrice;
+    cout << "Please enter 1 if the order is dine in and 2 if it is to go." << endl;
+
+    double taxPercent;  
+    double taxAmount = (mealPrice * taxPercent) / 100;  // 
+    double totalPrice = mealPrice + taxAmount;  // 
+
+    // Print receipt
+    cout << fixed << setprecision(2); 
+    cout << "RECEIPT:\n";
+    cout << "---------------------\n";
+    cout << "Price before tax: $" << mealPrice << endl;
+    cout << "Tax (" << taxPercent << "%):      $" << taxAmount << endl;
+    cout << "Total:            $" << totalPrice << endl;
     return 0;
 }
 
