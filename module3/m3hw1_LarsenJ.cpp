@@ -77,23 +77,55 @@ int question1()
 int question2()
 {
     // Define variables
-    double mealPrice, mealTip, newMealPrice;
+    double mealPrice;
+    int inOrOut;
     cout << "Please enter the price of your meal" << endl;
     cin >> mealPrice;
     cout << "Please enter 1 if the order is dine in and 2 if it is to go." << endl;
+    cin >> inOrOut;
 
-    double taxPercent;  
-    double taxAmount = (mealPrice * taxPercent) / 100;  // 
-    double totalPrice = mealPrice + taxAmount;  // 
+    if(inOrOut == 1)
+    {
+        double taxPercent = 0.02;
+        double taxAmount = (mealPrice * taxPercent);  // 
+        double totalPrice = mealPrice + taxAmount;  //
+        double newMealPrice = totalPrice + (totalPrice * 0.15);
+        double mealTip = (totalPrice * 0.15); 
 
-    // Print receipt
-    cout << fixed << setprecision(2); 
-    cout << "RECEIPT:\n";
-    cout << "---------------------\n";
-    cout << "Price before tax: $" << mealPrice << endl;
-    cout << "Tax (" << taxPercent << "%):      $" << taxAmount << endl;
-    cout << "Total:            $" << totalPrice << endl;
-    return 0;
+        // Print receipt
+        cout << fixed << setprecision(2); 
+        cout << "RECEIPT:\n";
+        cout << "---------------------\n";
+        cout << "Price     :         $" << mealPrice << endl;
+        cout << "Tax   (2%):" << "         $" << taxAmount << endl;
+        cout << "Subtotal  :         $" << totalPrice << endl;       
+        cout << "Tip  (15%):" << "         $" << mealTip << endl;
+        cout << "Total Due : " << "        $" << newMealPrice << endl;
+        cout << "---------------------\n";
+        cout << endl;
+        return 0;  
+    }
+    else
+    {
+        double taxPercent = 0.02;
+        double taxAmount = (mealPrice * taxPercent);  // 
+        double totalPrice = mealPrice + taxAmount;  //
+
+
+        // Print receipt
+        cout << fixed << setprecision(2); 
+        cout << "RECEIPT:\n";
+        cout << "---------------------\n";
+        cout << "Price     :         $" << mealPrice << endl;
+        cout << "Tax   (2%):" << "         $" << taxAmount << endl;
+        cout << "Total     :         $" << totalPrice << endl;       
+
+        cout << "---------------------\n";
+        cout << endl;
+        return 0; 
+    }
+
+    
 }
 
 int question3()
