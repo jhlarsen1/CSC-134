@@ -32,6 +32,7 @@ int main()
 
     //Question 3
     cout << "Question 3" << endl;
+    question3();
     
     //Question 4
     cout << "Question 4" << endl;
@@ -130,6 +131,34 @@ int question2()
 
 int question3()
 {
+    string storyLine;
+    cout << "Help me tell a story" << endl;
+    cout << "Type 1 for storyline A or Type 2 for storline B" << endl;
+    cin >> storyLine;
+    if(storyLine =="1")
+    {
+        string storyLine2;
+        cout << "A cow flew over the moon in a jet" << endl;
+        cout << "" << endl;
+        cout << "Type 1 or 2 again" << endl;
+        cin >> storyLine2;
+        if(storyLine2 =="1")
+        {
+            cout << "Game Over! The story is over :(, sorry!" << endl;
+            cout << "Choose a different option next time" << endl;
+        }
+        else
+        {
+            cout << "The cow landed at hogwarts and became the most powerful wizard to ever exist." << endl;
+            cout << "The End!" << endl;
+        }
+    }
+
+    else
+    {
+        cout << "Game Over!, Thee End" << endl;
+    }
+
     return 0;
 }
 
