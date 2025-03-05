@@ -33,7 +33,7 @@ int main()
 
     //Question 3
     cout << "Question 3" << endl;
-    question3();
+    //question3();
     
     //Question 4
     cout << "Question 4" << endl;
@@ -161,6 +161,7 @@ int question3()
             cout << "" << endl;
             cout << "" << endl;
             cout << "The cow landed at hogwarts and became the most powerful wizard to ever exist." << endl;
+            cout << "Not even \"you know who\" dared to challenge the cow." << endl;
             cout << "The End!" << endl;
             cout << "" << endl;
         }
@@ -192,19 +193,20 @@ int question4()
     cout << "Choose Options A, B, or C" << endl;
     cout << "Type A, B or C: "; 
     cin >> choice1;
+    convertInputLowerCase(choice1);
 
     // Generate random number based on choice1
-    if (choice1 == "A") 
+    if (choice1 == "a") 
     {
         randomForChoice1 = dist(rng);
         cout << "Random number for A: " << randomForChoice1 << endl;
     } 
-    else if (choice1 == "B") 
+    else if (choice1 == "b") 
     {
         randomForChoice1 = dist(rng);
         cout << "Random number for B: " << randomForChoice1 << endl;
     }
-    else if (choice1 == "C") 
+    else if (choice1 == "c") 
     {
         randomForChoice1 = dist(rng);
         cout << "Random number for C: " << randomForChoice1 << endl;
@@ -217,23 +219,26 @@ int question4()
     // Ask user for a second choice
     cout << "Again Type A, B, or C: ";
     cin >> choice2;
+    convertInputLowerCase(choice2);
 
     // Generate random number based on choice2
-    if (choice2 == "A") 
+    if (choice2 == "a") 
     {
         randomForChoice2 = dist(rng);
         cout << "Random number for A: " << randomForChoice2 << endl;
     } 
-    else if (choice2 == "B") 
+    else if (choice2 == "b") 
     {
         randomForChoice2 = dist(rng);
         cout << "Random number for B: " << randomForChoice2 << endl;
     }
-    else if (choice2 == "C") {
+    else if (choice2 == "c") 
+    {
         randomForChoice2 = dist(rng);
         cout << "Random number for C: " << randomForChoice2 << endl;
     }
-    else {
+    else 
+    {
         cout << "Invalid choice!" << endl;
     }
 
@@ -241,8 +246,10 @@ int question4()
     string math1;  
     cout << "Lastly, choose A for addition or B for multiplication: ";
     cin >> math1;
+    convertInputLowerCase(math1);
 
-    if (math1 == "A") {
+    if (math1 == "a") 
+    {
         int answer1, answer2;
         answer1 = randomForChoice1 + randomForChoice2;  // Use the random numbers assigned to the choices
         cout << "Answer this problem: " << randomForChoice1 << " + " << randomForChoice2 << " = ?" << endl;
@@ -255,11 +262,13 @@ int question4()
             cout << "I'm sorry, the answer was " << answer1 << endl;
         }
     }
-    else if (math1 == "B") {
+    else if (math1 == "b") 
+    {
         int answer1, answer2;
         answer1 = randomForChoice1 * randomForChoice2;  // Use the random numbers assigned to the choices
         cout << "Answer this problem: " << randomForChoice1 << " x " << randomForChoice2 << " = ?" << endl;
         cin >> answer2;
+        
         
         if (answer1 == answer2) {
             cout << "Good job! That is correct." << endl;
