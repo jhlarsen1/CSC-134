@@ -72,6 +72,7 @@ int question1()
     {
         cout << "If you’re not sure… that’s OK." << endl;
     }
+    cout << "" << endl;
 
     return 0;
 }
@@ -81,6 +82,7 @@ int question2()
     // Define variables
     double mealPrice;
     int inOrOut;
+    cout << "" <<endl;
     cout << "Please enter the price of your meal" << endl;
     cin >> mealPrice;
     cout << "Please enter 1 if the order is dine in and 2 if it is to go." << endl;
