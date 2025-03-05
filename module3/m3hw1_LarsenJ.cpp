@@ -25,11 +25,11 @@ int main()
 {
     //Question 1
     cout << "Question 1" << endl;
-    question1();
+    //question1();
     
     //Question 2
     cout << "Question 2" << endl;
-    question2();
+    //question2();
 
     //Question 3
     cout << "Question 3" << endl;
@@ -141,25 +141,37 @@ int question3()
     if(storyLine =="1")
     {
         string storyLine2;
-        cout << "A cow flew over the moon in a jet" << endl;
+        cout << "A cow flew over the moon in a jet." << endl;
+        cout << "The cow stopped in the clouds to take a nap." << endl;
+        cout << "A wolf howling at the moon woke the coke up." << endl;
+        cout << "The cow got back in his jet." << endl;
         cout << "" << endl;
-        cout << "Type 1 or 2 again" << endl;
+        cout << "" << endl;
+        cout << "Type 1 or 2 for the next part of the story" << endl;
         cin >> storyLine2;
         if(storyLine2 =="1")
         {
+            cout << "" << endl;
             cout << "Game Over! The story is over :(, sorry!" << endl;
             cout << "Choose a different option next time" << endl;
+            cout << "" << endl;
         }
         else
         {
+            cout << "" << endl;
+            cout << "" << endl;
             cout << "The cow landed at hogwarts and became the most powerful wizard to ever exist." << endl;
             cout << "The End!" << endl;
+            cout << "" << endl;
         }
     }
 
     else
     {
+        cout << "" << endl;
         cout << "Game Over!, Thee End" << endl;
+        cout << "" << endl;
+
     }
 
     return 0;
