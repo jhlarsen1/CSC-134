@@ -134,6 +134,7 @@ int question2()
 
 int question3()
 {
+    cout << "" << endl;
     string storyLine;
     cout << "Help me tell a story" << endl;
     cout << "Type 1 for storyline A or Type 2 for storline B" << endl;
@@ -188,6 +189,7 @@ int question4()
 
     int randomForChoice1 = 0, randomForChoice2 = 0;
   
+    cout << "" << endl;
     cout << "This is a simple game to generate math questions and see if you know the answers. Options will change every time and never be the same." << endl;
     cout << "Good Luck!" << endl;
     cout << "Choose Options A, B, or C" << endl;
