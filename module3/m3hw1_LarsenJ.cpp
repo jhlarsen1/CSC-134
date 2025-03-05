@@ -64,7 +64,7 @@ int question1()
     {
         cout << "That’s great! I’m sure we’ll get along." << endl;
     }
-    if(q1AnswerOne == "no")
+    else if(q1AnswerOne == "no")
     {
         cout << "Well, maybe you’ll learn to like me later." << endl;
     }
