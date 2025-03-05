@@ -25,15 +25,15 @@ int main()
 {
     //Question 1
     cout << "Question 1" << endl;
-    //question1();
+    question1();
     
     //Question 2
     cout << "Question 2" << endl;
-    //question2();
+    question2();
 
     //Question 3
     cout << "Question 3" << endl;
-    //question3();
+    question3();
     
     //Question 4
     cout << "Question 4" << endl;
