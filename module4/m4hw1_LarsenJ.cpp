@@ -24,9 +24,22 @@ double multiply()
 
     while (i < 13)
     {
-        vAnswer = vNumber * i;
-        cout << vNumber << " x " << i << " is " << vAnswer << endl;
-        i++;
+        if (vNumber > 0)
+        {
+            vAnswer = vNumber * i;
+            cout << vNumber << " x " << i << " is " << vAnswer << endl;
+            i++;
+        }
+        else if (vNumber < 1)
+        {
+            cout << "Invalid input, please try again!" << endl;
+            multiply();
+        }
+        
+        else
+        {
+            cout << "program terminated" << endl;
+        }
 
     }
 }
