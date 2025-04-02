@@ -13,7 +13,7 @@ using namespace std;
 double getLength();
 double getWidth();
 double getArea(double length, double width);
-double displayData(double length, double width, double area);
+void displayData(double length, double width, double area);
 
 int main()
 {
@@ -67,7 +67,7 @@ double getArea(double length, double width)
 
     return vArea;
 }
-double displayData(double length, double width, double area)
+void displayData(double length, double width, double area)
 {
     cout << "length: " << length << endl;
     cout << "width: " << width << endl;
