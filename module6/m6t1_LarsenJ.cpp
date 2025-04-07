@@ -25,6 +25,8 @@ int main()
     }
 
     cout << "Over " << DAYS << " days, total cars = " << cars_total << endl;
+    cars_average = (double)cars_total / DAYS;
+    cout << "for an average of " << "each day." << endl;
 
-    return 0;
+    
 }
