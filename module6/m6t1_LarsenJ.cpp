@@ -28,12 +28,12 @@ int main()
 
     cout << "Over " << DAYS << " days, total cars = " << cars_total << endl;
     cars_average = (double)cars_total / DAYS;
-    cout << "for an average of " << cars_average << "each day." << endl;
+    cout << "for an average of " << cars_average << " each day." << endl;
 
     //now print the array
     for (int i = 0; i < DAYS; i++)
     {
-        cout << "Day: " << i+1 << "Count: " << cars[i] << endl;
+        cout << "Day: " << i+1 << " Count: " << cars[i] << endl;
     }
 
 
